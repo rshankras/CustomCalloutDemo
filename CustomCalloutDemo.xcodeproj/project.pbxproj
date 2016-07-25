@@ -13,6 +13,8 @@
 		4894BDAB1D45CECB00C6B82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4894BDAA1D45CECB00C6B82D /* Assets.xcassets */; };
 		4894BDAE1D45CECB00C6B82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4894BDAC1D45CECB00C6B82D /* LaunchScreen.storyboard */; };
 		4894BDB91D45CECB00C6B82D /* CustomCalloutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894BDB81D45CECB00C6B82D /* CustomCalloutDemoTests.swift */; };
+		4894BDC91D45D3F300C6B82D /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894BDC81D45D3F300C6B82D /* CustomAnnotationView.swift */; };
+		4894BDCB1D45D62400C6B82D /* CustomAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894BDCA1D45D62400C6B82D /* CustomAnnotationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		4894BDB41D45CECB00C6B82D /* CustomCalloutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCalloutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4894BDB81D45CECB00C6B82D /* CustomCalloutDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalloutDemoTests.swift; sourceTree = "<group>"; };
 		4894BDBA1D45CECB00C6B82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4894BDC81D45D3F300C6B82D /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		4894BDCA1D45D62400C6B82D /* CustomAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAnnotationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,10 @@
 		4894BDA21D45CECB00C6B82D /* CustomCalloutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				4894BDA31D45CECB00C6B82D /* AppDelegate.swift */,
-				4894BDA51D45CECB00C6B82D /* ViewController.swift */,
-				4894BDA71D45CECB00C6B82D /* Main.storyboard */,
-				4894BDAA1D45CECB00C6B82D /* Assets.xcassets */,
-				4894BDAC1D45CECB00C6B82D /* LaunchScreen.storyboard */,
-				4894BDAF1D45CECB00C6B82D /* Info.plist */,
+				4894BDC41D45D26D00C6B82D /* app */,
+				4894BDC31D45D26500C6B82D /* controller */,
+				4894BDC51D45D3AC00C6B82D /* view */,
+				4894BDC61D45D3BA00C6B82D /* resources */,
 			);
 			path = CustomCalloutDemo;
 			sourceTree = "<group>";
@@ -94,6 +96,42 @@
 				4894BDBA1D45CECB00C6B82D /* Info.plist */,
 			);
 			path = CustomCalloutDemoTests;
+			sourceTree = "<group>";
+		};
+		4894BDC31D45D26500C6B82D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4894BDA51D45CECB00C6B82D /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		4894BDC41D45D26D00C6B82D /* app */ = {
+			isa = PBXGroup;
+			children = (
+				4894BDA31D45CECB00C6B82D /* AppDelegate.swift */,
+			);
+			name = app;
+			sourceTree = "<group>";
+		};
+		4894BDC51D45D3AC00C6B82D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4894BDC81D45D3F300C6B82D /* CustomAnnotationView.swift */,
+				4894BDCA1D45D62400C6B82D /* CustomAnnotationView.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4894BDC61D45D3BA00C6B82D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4894BDA71D45CECB00C6B82D /* Main.storyboard */,
+				4894BDAA1D45CECB00C6B82D /* Assets.xcassets */,
+				4894BDAC1D45CECB00C6B82D /* LaunchScreen.storyboard */,
+				4894BDAF1D45CECB00C6B82D /* Info.plist */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +217,7 @@
 			files = (
 				4894BDAE1D45CECB00C6B82D /* LaunchScreen.storyboard in Resources */,
 				4894BDAB1D45CECB00C6B82D /* Assets.xcassets in Resources */,
+				4894BDCB1D45D62400C6B82D /* CustomAnnotationView.xib in Resources */,
 				4894BDA91D45CECB00C6B82D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4894BDA61D45CECB00C6B82D /* ViewController.swift in Sources */,
+				4894BDC91D45D3F300C6B82D /* CustomAnnotationView.swift in Sources */,
 				4894BDA41D45CECB00C6B82D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
